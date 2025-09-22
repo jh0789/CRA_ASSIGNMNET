@@ -1,4 +1,4 @@
-from attendance import input_file
+from attendance import manage_attendance
 
 
 def test_input_file(capsys):
@@ -31,7 +31,7 @@ def test_input_file(capsys):
         "",
     ]
     # act
-    input_file()
+    manage_attendance()
 
     output = capsys.readouterr().out.split('\n')
 
