@@ -1,6 +1,5 @@
 from enum import IntEnum
 from player import Player
-from grade import GradeFactory
 
 MAX_PLAYER = 100
 

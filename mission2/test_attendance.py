@@ -1,4 +1,5 @@
 from attendance import manage_attendance
+from grade import GradeFactory, enumGrade
 
 
 def test_input_file(capsys):
@@ -32,8 +33,22 @@ def test_input_file(capsys):
     ]
     # act
     manage_attendance()
-
     output = capsys.readouterr().out.split('\n')
 
     # assert
     assert output == expected_output
+
+
+def test_grade():
+    # arrange
+    gradeGold = GradeFactory.create_grade(50)
+    gradeSilver = GradeFactory.create_grade(30)
+    gradeNormal = GradeFactory.create_grade(20)
+    # act
+    enum_gold = gradeGold.get_grade()
+    enum_silver = gradeSilver.get_grade()
+    enum_normal = gradeNormal.get_grade()
+    # assert
+    assert enum_gold == enumGrade.gold
+    assert enum_silver == enumGrade.silver
+    assert enum_normal == enumGrade.normal
