@@ -1,3 +1,19 @@
+from abc import ABC, abstractmethod
+
+
+class IPoint(ABC):
+    @abstractmethod
+    def add_daily_point(self, weekday: str):
+        pass
+
+    @abstractmethod
+    def add_point(self, point:int):
+        pass
+
+    @abstractmethod
+    def get_point(self):
+        pass
+
 
 POINT_RULE = {
     "monday": 1,
@@ -9,11 +25,12 @@ POINT_RULE = {
     "sunday": 2,
 }
 
-class Point:
+
+class WednesdayPoint(IPoint):
     def __init__(self):
         self.point = 0
 
-    def add_weekday_point(self, weekday: str):
+    def add_daily_point(self, weekday: str):
         self.point += POINT_RULE[weekday]
 
     def get_point(self):

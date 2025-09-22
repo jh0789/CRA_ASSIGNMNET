@@ -1,6 +1,6 @@
 from grade import GradeFactory
 from mission2.grade import NormalGrade
-from point import Point
+from point import WednesdayPoint
 
 THRESHOLD_BONUS = 9
 BONUS_POINT = 10
@@ -9,7 +9,7 @@ class Player:
     def __init__(self, name, player_id):
         self.player_id = player_id
         self.name = name
-        self.point = Point()
+        self.point = WednesdayPoint()
         self.grade = NormalGrade()
         self.attend_on_wednesday = 0
         self.attend_on_weekend = 0

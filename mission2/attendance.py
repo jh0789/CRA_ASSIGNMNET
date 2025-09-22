@@ -42,7 +42,7 @@ def calc_score(name, weekday):
 
     player_id = player_list[name]
 
-    players[player_id].point.add_weekday_point(weekday)
+    players[player_id].point.add_daily_point(weekday)
     players[player_id].check_special_day(weekday)
 
     attendance_record[player_id][WEEKDAYS[weekday]] += 1
