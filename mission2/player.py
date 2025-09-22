@@ -1,5 +1,5 @@
-from grade import GradeFactory, IGrade
-from mission2.grade import NormalGrade, SilverGrade
+from grade import GradeFactory
+from mission2.grade import NormalGrade
 
 THRESHOLD_BONUS = 9
 BONUS_POINT = 10
