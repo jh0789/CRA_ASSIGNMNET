@@ -21,14 +21,14 @@ class Day(IntEnum):
     sunday = 6
 
 
-POINT_RULE = {
-    "monday": {"day": Day.monday, "point": 1},
-    "tuesday": {"day": Day.tuesday, "point": 1},
-    "wednesday": {"day": Day.wednesday, "point": 3},
-    "thursday": {"day": Day.thursday, "point": 1},
-    "friday": {"day": Day.friday, "point": 1},
-    "saturday": {"day": Day.saturday, "point": 2},
-    "sunday": {"day": Day.sunday, "point": 2},
+WEEKDAYS = {
+    "monday": Day.monday,
+    "tuesday": Day.tuesday,
+    "wednesday": Day.wednesday,
+    "thursday": Day.thursday,
+    "friday": Day.friday,
+    "saturday": Day.saturday,
+    "sunday": Day.sunday,
 }
 
 
@@ -42,14 +42,10 @@ def calc_score(name, weekday):
 
     player_id = player_list[name]
 
-    day = POINT_RULE[weekday]['day']
-    attendance_record[player_id][day] += 1
-    players[player_id].point += POINT_RULE[weekday]['point']
+    players[player_id].point.add_weekday_point(weekday)
+    players[player_id].check_special_day(weekday)
 
-    if weekday == 'wednesday':
-        players[player_id].attend_on_wednesday += 1
-    elif weekday == 'saturday' or weekday == 'sunday':
-        players[player_id].attend_on_weekend += 1
+    attendance_record[player_id][WEEKDAYS[weekday]] += 1
 
 
 def print_removed_player():
