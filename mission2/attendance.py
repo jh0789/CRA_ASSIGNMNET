@@ -4,9 +4,6 @@ from grade import GradeFactory
 
 MAX_PLAYER = 100
 
-THRESHOLD_BONUS = 9
-BONUS_POINT = 10
-
 player_list = {}
 players = {}
 total_player = 0
@@ -66,18 +63,6 @@ def print_removed_player():
             print(players[player_id].name)
 
 
-def display_info(player_id: int):
-    print(f"NAME : {players[player_id].name}, POINT : {players[player_id].point}, GRADE : ", end="")
-    players[player_id].grade.print_grade()
-
-
-def calc_bonus_point(player_id: int):
-    if attendance_record[player_id][Day.wednesday] > THRESHOLD_BONUS:
-        players[player_id].point += BONUS_POINT
-    if attendance_record[player_id][Day.saturday] + attendance_record[player_id][Day.sunday] > THRESHOLD_BONUS:
-        players[player_id].point += BONUS_POINT
-
-
 def manage_attendance():
     try:
         with open("attendance_weekday_500.txt", encoding='utf-8') as f:
@@ -90,9 +75,11 @@ def manage_attendance():
                     calc_score(file_input[0], file_input[1])
 
         for player_id in range(1, total_player + 1):
-            calc_bonus_point(player_id)
-            players[player_id].grade = GradeFactory.create_grade(players[player_id].point)
-            display_info(player_id)
+            players[player_id].calc_bonus_point(attendance_record[player_id][Day.wednesday],
+                                                attendance_record[player_id][Day.saturday] +
+                                                attendance_record[player_id][Day.sunday])
+            players[player_id].get_grade()
+            players[player_id].print_info()
 
         print_removed_player()
 

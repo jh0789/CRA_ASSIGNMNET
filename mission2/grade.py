@@ -18,7 +18,7 @@ class IGrade(ABC):
     def print_grade(self):
         pass
 
-class GoodGrade(IGrade):
+class GoldGrade(IGrade):
     def get_grade(self):
         return enumGrade.gold
     def print_grade(self):
@@ -41,7 +41,7 @@ class GradeFactory:
     @staticmethod
     def create_grade(point:int) -> IGrade:
         if point >= THRESHOLD_GOLD_GRADE:
-            return GoodGrade()
+            return GoldGrade()
         elif point >= THRESHOLD_SILVER_GRADE:
             return SilverGrade()
         else:
