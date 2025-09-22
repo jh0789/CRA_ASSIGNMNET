@@ -1,5 +1,7 @@
 from enum import IntEnum
 
+MAX_PLAYER = 100
+
 THRESHOLD_SILVER_GRADE = 30
 THRESHOLD_GOLD_GRADE = 50
 THRESHOLD_BONUS = 9
@@ -9,12 +11,12 @@ player_list = {}
 total_player = 0
 
 # dat[사용자ID][요일]
-attendance_record = [[0] * 100 for _ in range(100)]
-points = [0] * 100
-grade = [0] * 100
-names = [''] * 100
-attend_on_wednesday = [0] * 100
-attend_on_weekend = [0] * 100
+attendance_record = [[0] * MAX_PLAYER for _ in range(MAX_PLAYER)]
+points = [0] * MAX_PLAYER
+grade = [0] * MAX_PLAYER
+names = [''] * MAX_PLAYER
+attend_on_wednesday = [0] * MAX_PLAYER
+attend_on_weekend = [0] * MAX_PLAYER
 
 
 class Day(IntEnum):
