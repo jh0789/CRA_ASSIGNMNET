@@ -9,6 +9,7 @@
       <change beforePath="$PROJECT_DIR$/mission2/attendance.py" beforeDir="false" afterPath="$PROJECT_DIR$/mission2/attendance.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mission2/point.py" beforeDir="false" afterPath="$PROJECT_DIR$/mission2/point.py" afterDir="false" />
     </list>
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -287,7 +288,7 @@
       <updated>1758501885241</updated>
       <workItem from="1758501886533" duration="850000" />
       <workItem from="1758502742018" duration="369000" />
-      <workItem from="1758503135489" duration="14797000" />
+      <workItem from="1758503135489" duration="16809000" />
     </task>
     <servers />
   </component>
