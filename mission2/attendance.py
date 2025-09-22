@@ -71,10 +71,6 @@ def display_info(player_id: int):
     players[player_id].grade.print_grade()
 
 
-def assign_grade(player_id):
-    players[player_id].grade = GradeFactory.create_grade(players[player_id].point)
-
-
 def calc_bonus_point(player_id: int):
     if attendance_record[player_id][Day.wednesday] > THRESHOLD_BONUS:
         players[player_id].point += BONUS_POINT
@@ -95,7 +91,7 @@ def manage_attendance():
 
         for player_id in range(1, total_player + 1):
             calc_bonus_point(player_id)
-            assign_grade(player_id)
+            players[player_id].grade = GradeFactory.create_grade(players[player_id].point)
             display_info(player_id)
 
         print_removed_player()
