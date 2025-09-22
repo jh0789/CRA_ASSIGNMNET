@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f5e0060-40d2-4406-9345-be614648b2b8" name="Changes" comment="" />
+    <list default="true" id="4f5e0060-40d2-4406-9345-be614648b2b8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/mission2/attendance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mission2/attendance_weekday_500.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mission2/player.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mission2/test_attendance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,14 +51,15 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python tests.Python tests for mission1.test_attendance.test_input_file.executor": "Run",
+    "Python tests.pytest mission2.executor": "Run",
     "Python.attendance.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "refactor/input__file__function",
+    "git-widget-placeholder": "feature/player__class",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/User/PycharmProjects/CRA_ASSIGNMNET",
+    "last_opened_file_path": "C:/Users/User/PycharmProjects/CRA_ASSIGNMNET/mission2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -63,11 +71,14 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\CRA_ASSIGNMNET\mission2" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\PycharmProjects\CRA_ASSIGNMNET\misstion1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for mission1.test_attendance.test_input_file">
+  <component name="RunManager" selected="Python tests.pytest mission2">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="CRA_ASSIGNMNET" />
       <option name="ENV_FILES" value="" />
@@ -197,7 +208,7 @@
       <option name="docutils_open_in_browser" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for mission1.test_attendance.test_input_file" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for mission1.test_attendance.test_input_file" type="tests" factoryName="Autodetect" temporary="true">
       <module name="CRA_ASSIGNMNET" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -213,8 +224,28 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest mission2" type="tests" factoryName="py.test">
+      <module name="CRA_ASSIGNMNET" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\User\PycharmProjects\CRA_ASSIGNMNET\mission2" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;--cov\u003dattendance --cov-report\u003dhtml&quot;" />
+      <option name="_new_target" value="&quot;mission2.test_attendance.test_input_file&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.attendance" />
+      <item itemvalue="Python tests.pytest mission2" />
       <item itemvalue="Python tests.Python tests for mission1.test_attendance.test_input_file" />
     </list>
     <recent_temporary>
@@ -240,7 +271,7 @@
       <updated>1758501885241</updated>
       <workItem from="1758501886533" duration="850000" />
       <workItem from="1758502742018" duration="369000" />
-      <workItem from="1758503135489" duration="7072000" />
+      <workItem from="1758503135489" duration="9272000" />
     </task>
     <servers />
   </component>
@@ -248,7 +279,8 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CRA_ASSIGNMNET$pytest_mission2.coverage" NAME="pytest mission2 Coverage Results" MODIFIED="1758514135521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:\Users\User\PycharmProjects\CRA_ASSIGNMNET\mission2" />
     <SUITE FILE_PATH="coverage/CRA_ASSIGNMNET$attendance.coverage" NAME="attendance Coverage Results" MODIFIED="1758504078406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mission1" />
-    <SUITE FILE_PATH="coverage/CRA_ASSIGNMNET$.coverage" NAME=" Coverage Results" MODIFIED="1758511840236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mission1" />
+    <SUITE FILE_PATH="coverage/CRA_ASSIGNMNET$.coverage" NAME=" Coverage Results" MODIFIED="1758512189607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mission1" />
   </component>
 </project>
