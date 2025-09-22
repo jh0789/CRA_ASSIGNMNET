@@ -1,2 +1,4 @@
 .venv
 .idea
+/mission1/htmlcov
+/mission1/.coverage
