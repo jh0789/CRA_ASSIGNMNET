@@ -1,10 +1,9 @@
 from enum import IntEnum
 from player import Player
+from grade import GradeFactory
 
 MAX_PLAYER = 100
 
-THRESHOLD_SILVER_GRADE = 30
-THRESHOLD_GOLD_GRADE = 50
 THRESHOLD_BONUS = 9
 BONUS_POINT = 10
 
@@ -24,12 +23,6 @@ class Day(IntEnum):
     friday = 4
     saturday = 5
     sunday = 6
-
-
-class Grade(IntEnum):
-    gold = 1
-    silver = 2
-    normal = 0
 
 
 POINT_RULE = {
@@ -75,31 +68,13 @@ def print_removed_player():
 
 def display_info(player_id: int):
     print(f"NAME : {players[player_id].name}, POINT : {players[player_id].point}, GRADE : ", end="")
-    if players[player_id].grade == Grade.gold:
-        print("GOLD")
-    elif players[player_id].grade == Grade.silver:
-        print("SILVER")
-    else:
-        print("NORMAL")
-
-
-def assign_grade(player_id):
-    # if points[player_id] >= THRESHOLD_GOLD_GRADE:
-    if players[player_id].point >= THRESHOLD_GOLD_GRADE:
-        players[player_id].grade = Grade.gold
-    # elif points[player_id] >= THRESHOLD_SILVER_GRADE:
-    elif players[player_id].point >= THRESHOLD_SILVER_GRADE:
-        players[player_id].grade = Grade.silver
-    else:
-        players[player_id].grade = Grade.normal
+    players[player_id].grade.print_grade()
 
 
 def calc_bonus_point(player_id: int):
     if attendance_record[player_id][Day.wednesday] > THRESHOLD_BONUS:
-        # points[player_id] += BONUS_POINT
         players[player_id].point += BONUS_POINT
     if attendance_record[player_id][Day.saturday] + attendance_record[player_id][Day.sunday] > THRESHOLD_BONUS:
-        # points[player_id] += BONUS_POINT
         players[player_id].point += BONUS_POINT
 
 
@@ -116,7 +91,7 @@ def manage_attendance():
 
         for player_id in range(1, total_player + 1):
             calc_bonus_point(player_id)
-            assign_grade(player_id)
+            players[player_id].grade = GradeFactory.create_grade(players[player_id].point)
             display_info(player_id)
 
         print_removed_player()

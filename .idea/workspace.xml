@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f5e0060-40d2-4406-9345-be614648b2b8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/mission2/attendance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mission2/attendance_weekday_500.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mission2/player.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mission2/test_attendance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mission2/grade.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mission2/attendance.py" beforeDir="false" afterPath="$PROJECT_DIR$/mission2/attendance.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +228,7 @@
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
       <option name="SDK_NAME" value="Python 3.12" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\User\PycharmProjects\CRA_ASSIGNMNET\mission2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mission2" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -271,7 +268,7 @@
       <updated>1758501885241</updated>
       <workItem from="1758501886533" duration="850000" />
       <workItem from="1758502742018" duration="369000" />
-      <workItem from="1758503135489" duration="9272000" />
+      <workItem from="1758503135489" duration="11476000" />
     </task>
     <servers />
   </component>
@@ -279,7 +276,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CRA_ASSIGNMNET$pytest_mission2.coverage" NAME="pytest mission2 Coverage Results" MODIFIED="1758514135521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:\Users\User\PycharmProjects\CRA_ASSIGNMNET\mission2" />
+    <SUITE FILE_PATH="coverage/CRA_ASSIGNMNET$pytest_mission2.coverage" NAME="pytest mission2 Coverage Results" MODIFIED="1758516664193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mission2" />
     <SUITE FILE_PATH="coverage/CRA_ASSIGNMNET$attendance.coverage" NAME="attendance Coverage Results" MODIFIED="1758504078406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mission1" />
     <SUITE FILE_PATH="coverage/CRA_ASSIGNMNET$.coverage" NAME=" Coverage Results" MODIFIED="1758512189607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mission1" />
   </component>
